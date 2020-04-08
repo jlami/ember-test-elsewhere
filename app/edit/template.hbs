@@ -6,6 +6,6 @@
 {{#if (eq m.id this.model.params.id)}}
 editing<br/>
 {{else}}
-<LinkTo @route='edit' @model="{{m.id}}"><Item @model={{m}}/></LinkTo>
+<Item @model={{m}}/>
 {{/if}}
 {{/each}}
