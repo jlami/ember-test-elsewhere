@@ -1,0 +1,11 @@
+
+<h1>Edit</h1>
+<LinkTo @route='index'>Index</LinkTo><br>
+
+{{#each this.model.model key="id" as |m|}}
+{{#if (eq m.id this.model.params.id)}}
+editing<br/>
+{{else}}
+<LinkTo @route='edit' @model="{{m.id}}"><Item @model={{m}}/></LinkTo>
+{{/if}}
+{{/each}}

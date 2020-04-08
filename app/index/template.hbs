@@ -1,0 +1,6 @@
+
+<h1>Index</h1>
+
+{{#each this.model key="id" as |m|}}
+<LinkTo @route='edit' @model="{{m.id}}"><Item @model={{m}}/></LinkTo>
+{{/each}}
